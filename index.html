@@ -63,10 +63,15 @@
             <form>
                 <input type="text" placeholder="Username" maxlength="10"required/><br><br>
                 <input type="password" placeholder="Password" maxlength="10" required/><br><br>
-                <input type="submit" value="LOGIN" id="lgBtn"/>
+                <input type="submit" value="LOGIN" id="lgBtn" onclick="checkLgn()"/>
             </form>
         </fieldset>
     </div>
     <center> 
+        <script>
+            function checkLgn() {
+                window.location ="http://localhost:8080/savings_jsp/checker.jsp";
+            }
+        </script>
 </body>
 </html>
